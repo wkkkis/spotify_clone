@@ -4,9 +4,11 @@ import React, { useLayoutEffect } from 'react'
 import Sidebar from '../components/Sidebar'
 import Header from '../components/Header'
 
+//Hooks
+import { useTitle } from '../hooks/useTitle'
+
 //Styles
 import "./layout.scss"
-import { useTitle } from '../hooks/useTitle'
 
 const MainLayout = ({ children, title }) => {
   const { rename } = useTitle()
